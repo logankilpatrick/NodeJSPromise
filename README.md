@@ -33,3 +33,7 @@ Given the nature of a promise, there are three possible states that it can be in
 * Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
 
+### Wrapping up a promise
+
+Much like a try/catch block in many languages, promises allow for a `.finally()` callback which enables us to run some code at the very end of the promise exchange, regardless of the ending state of that promise.
+
