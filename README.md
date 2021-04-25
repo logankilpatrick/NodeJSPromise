@@ -28,6 +28,8 @@ Call back. This is a nice practice to follow but may lead to issues if you forge
 
 Given the nature of a promise, there are three possible states that it can be in: pending, fulfilled, or rejected. These are pretty straightforward so there’s no need to dive into the details but here is a quick diagram that highlights much of the detail. 
 
-![Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise](https://user-images.githubusercontent.com/35577566/116013793-cf112300-a5e6-11eb-934e-aca42f6c40f5.png) __Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise__
+![Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise](https://user-images.githubusercontent.com/35577566/116013793-cf112300-a5e6-11eb-934e-aca42f6c40f5.png) 
+
+* Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
 
