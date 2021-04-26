@@ -37,3 +37,21 @@ Given the nature of a promise, there are three possible states that it can be in
 
 Much like a try/catch block in many languages, promises allow for a `.finally()` callback which enables us to run some code at the very end of the promise exchange, regardless of the ending state of that promise.
 
+
+### Life without promises 
+
+You may be thinking as we have gone through these examples, this all seems very straightforward and such, but why do we need promises to start. The two main reasons are that it enables us to group our asynchronous code together nicely and also that it allows us to avoid deeply nested code. Without promises, your code would end up looking like:
+
+```node
+function bad_exmaple() {
+	do_something () {
+        do_something_else () {
+            etc () {
+                etc.
+            }
+        }
+    }
+}
+
+```
+but with even more complexity. This problem has been generally referred to as: https://en.wikipedia.org/wiki/Pyramid_of_doom_(programming)
