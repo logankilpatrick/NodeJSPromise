@@ -33,25 +33,30 @@ Given the nature of a promise, there are three possible states that it can be in
 * Source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
 
-### Wrapping up a promise
+### Wrapping Up a Promise
 
 Much like a try/catch block in many languages, promises allow for a `.finally()` callback which enables us to run some code at the very end of the promise exchange, regardless of the ending state of that promise.
 
 
-### Life without promises 
+### Life Without Promises 
 
-You may be thinking as we have gone through these examples, this all seems very straightforward and such, but why do we need promises to start. The two main reasons are that it enables us to group our asynchronous code together nicely and also that it allows us to avoid deeply nested code. Without promises, your code would end up looking like:
+You may be thinking as we have gone through these examples, "this all seems very straightforward and such, but why do we need promises to start?" The two main reasons are that it enables us to group our asynchronous code together nicely and also that it allows us to avoid deeply nested code. Without promises, your code would end up looking like:
 
 ```node
 function bad_exmaple() {
 	do_something () {
-        do_something_else () {
-            etc () {
-                etc.
-            }
-        }
-    }
+        	do_something_else () {
+            		etc () {
+                		etc.
+            		}
+        	}
+    	}
 }
 
 ```
-but with even more complexity. This problem has been generally referred to as: https://en.wikipedia.org/wiki/Pyramid_of_doom_(programming)
+but with even more complexity. This problem has been generally referred to as: https://en.wikipedia.org/wiki/Pyramid_of_doom_(programming) and is something that if it can be avoided, should be avoided.
+
+### Learn More About Promises
+
+The definitive place for learning about promises and finding more example of them is: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
+Here you will learn more about the technical details of a Promise, find links to examples, and understand where Promises are used in the context of web applications.
